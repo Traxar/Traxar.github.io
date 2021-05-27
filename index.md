@@ -1,5 +1,5 @@
-## Welcome to my GitHub page
+# Welcome to my GitHub
 
-### Testing:
+## Testing:
 [Download](https://traxar.github.io/KellyFinder.zip) Kellyfinder here. (v 1.0.0.5)
 
