@@ -2,4 +2,4 @@
 
 ## Testing Offline Install:
 
-[Download](https://traxar.github.io/KellyFinder/download/setup.exe) Kellyfinder here. (v 1.1.0.1)
+[Download](https://traxar.github.io/KellyFinder/download/KellyFinder.zip) Kellyfinder here. (v 1.1.0.2)
