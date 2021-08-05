@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Kelly Criterion generalized</title>
+  <title></title>
   <style>
   @font-face {
   font-family: octicons-link;
@@ -2274,117 +2274,7 @@ pre[class*="language-"] {
   border-bottom: 2px dotted black;
 }
 </style>
-  <style>.markdown-body{}pre.front-matter{display:none!important;}/** Academic **/
-
-/* DejaVu Serif should use 11pt */
-.hf-container,
-.markdown-body {
-  font-family: Georgia,Palatino,"Palatino Linotype","Times New Roman","DejaVu Serif",serif,"Apple Color Emoji","Segoe UI Emoji";
-  font-size: 12pt;
-  line-height: 1.3;
-  color: #212121;
-}
-
-:root {
-  --footerHeaderBorderColor: #1c1c1c;
-}
-.hf-container {
-  font-size: 0.75em;
-}
-.page-header:not(.simple) .hf-container {
-  padding-bottom: 2px;
-  border-bottom: 1px solid var(--footerHeaderBorderColor);
-}
-.page-footer:not(.simple) .hf-container {
-  padding-top: 2px;
-  border-top: 1px solid var(--footerHeaderBorderColor);
-}
-
-.footnotes {
-  font-size: 0.75em;
-  opacity: 0.9;
-}
-.footnotes > hr:first-of-type {
-  width: 250px;
-  height: 1px;
-  background: var(--footerHeaderBorderColor);
-}
-.footnotes > ol > li > p {
-  margin-top: 4px;
-  margin-bottom: 4px;
-}
-
-.markdown-body h1,
-.markdown-body h2,
-.markdown-body h3,
-.markdown-body h4,
-.markdown-body h5,
-.markdown-body h6 {
-  font-weight: 600;
-  color: #282828;
-}
-
-.markdown-body h1 {
-  font-size: 1.8em;
-}
-.markdown-body h2 {
-  font-size: 1.6em;
-}
-.markdown-body h3 {
-  font-size: 1.4em;
-}
-.markdown-body h4,
-.markdown-body h5 {
-  font-size: 1.2em;
-}
-.markdown-body h6 {
-  font-size: 1em;
-}
-
-.markdown-body h1,
-.markdown-body h2 {
-  border-bottom: none;
-  padding-bottom: 0;
-}
-
-.markdown-body a {
-  color: #212121;
-  text-decoration: underline;
-}
-
-.markdown-body hr {
-  background-color: #b0b0b0;
-  height: 1px;
-}
-
-.markdown-body blockquote {
-  border: none;
-  color: #282828;
-  padding: 0 1em;
-  margin-left: 20px;
-}
-
-.markdown-body .highlight pre,
-.markdown-body pre {
-  background-color: #f6f8fa;
-  border: 1px solid #e5e5e5;
-  border-radius: 0;
-}
-
-.markdown-body table td,
-.markdown-body table th {
-  border: 1px solid #1a1a1a;
-  padding: 2px 6px;
-}
-.markdown-body table tr {
-  background: none;
-  border-top: 1px solid #1a1a1a;
-  text-align: left;
-}
-.markdown-body table tr:nth-child(2n) {
-  background: none;
-}
-</style>
+  <style>.markdown-body{}pre.front-matter{display:none!important;}</style>
 </head>
 <body>
   <article class="markdown-body"><h1 class="atx" id="kelly-criterion-generalized">Kelly criterion generalized</h1>
@@ -2405,7 +2295,7 @@ pre[class*="language-"] {
 <p>First of all it should be mentioned that just having a bet with a expected return <span class="katex"><span class="katex-mathml"></span><span aria-hidden="true" class="katex-html"><span class="base"><span style="height:0.68333em;vertical-align:0em;" class="strut"></span><span class="mord">Φ</span><span style="margin-right:0.2222222222222222em;" class="mspace"></span><span class="mbin">⋅</span><span style="margin-right:0.2222222222222222em;" class="mspace"></span></span><span class="base"><span style="height:0.8304100000000001em;vertical-align:-0.19444em;" class="strut"></span><span class="mord mathnormal">p</span><span style="margin-right:0.2777777777777778em;" class="mspace"></span><span class="mrel">≥</span><span style="margin-right:0.2777777777777778em;" class="mspace"></span></span><span class="base"><span style="height:0.64444em;vertical-align:0em;" class="strut"></span><span class="mord">1</span></span></span></span> is not enough to turn a profit over many rounds. For a demonstation consider the bet with <span class="katex"><span class="katex-mathml"></span><span aria-hidden="true" class="katex-html"><span class="base"><span style="height:0.625em;vertical-align:-0.19444em;" class="strut"></span><span class="mord mathnormal">p</span><span style="margin-right:0.2777777777777778em;" class="mspace"></span><span class="mrel">=</span><span style="margin-right:0.2777777777777778em;" class="mspace"></span></span><span class="base"><span style="height:0.8777699999999999em;vertical-align:-0.19444em;" class="strut"></span><span class="mord">0</span><span class="mord">.</span><span class="mord">5</span><span class="mpunct">,</span><span style="margin-right:0.16666666666666666em;" class="mspace"></span><span class="mord">Φ</span><span style="margin-right:0.2777777777777778em;" class="mspace"></span><span class="mrel">=</span><span style="margin-right:0.2777777777777778em;" class="mspace"></span></span><span class="base"><span style="height:0.64444em;vertical-align:0em;" class="strut"></span><span class="mord">2</span><span class="mord">.</span><span class="mord">2</span><span class="mord">5</span></span></span></span>. Now let's say that the gambler decides to bet <span class="katex"><span class="katex-mathml"></span><span aria-hidden="true" class="katex-html"><span class="base"><span style="height:0.80556em;vertical-align:-0.05556em;" class="strut"></span><span class="mord">4</span><span class="mord">0</span><span class="mord">%</span></span></span></span> of all their belongings each round. So in total the gambler either loses <span class="katex"><span class="katex-mathml"></span><span aria-hidden="true" class="katex-html"><span class="base"><span style="height:0.80556em;vertical-align:-0.05556em;" class="strut"></span><span class="mord">4</span><span class="mord">0</span><span class="mord">%</span></span></span></span> or gains <span class="katex"><span class="katex-mathml"></span><span aria-hidden="true" class="katex-html"><span class="base"><span style="height:0.80556em;vertical-align:-0.05556em;" class="strut"></span><span class="mord">5</span><span class="mord">0</span><span class="mord">%</span></span></span></span> with equal likelyhood. Now one might expect an average return of <span class="katex"><span class="katex-mathml"></span><span aria-hidden="true" class="katex-html"><span class="base"><span style="height:0.83333em;vertical-align:-0.08333em;" class="strut"></span><span class="mord">+</span><span class="mord">5</span><span class="mord">%</span></span></span></span> each round and hence assume that the gamblers capital will grow in the long run. Here is a simulation of 100 runs starting at <span class="katex"><span class="katex-mathml"></span><span aria-hidden="true" class="katex-html"><span class="base"><span style="height:0.64444em;vertical-align:0em;" class="strut"></span><span class="mord">1</span></span></span></span> currency, betting 1000 times:</p>
 <p><img alt="" src="images/img_1.png"></p>
 <p>This might come as a shocking result since one can see that even though some runs generate a lot of money eventually they all lose it. The average at the end is practically <span class="katex"><span class="katex-mathml"></span><span aria-hidden="true" class="katex-html"><span class="base"><span style="height:0.64444em;vertical-align:0em;" class="strut"></span><span class="mord">0</span></span></span></span> and no where close to the expected <span class="katex"><span class="katex-mathml"></span><span aria-hidden="true" class="katex-html"><span class="base"><span style="height:0.8141079999999999em;vertical-align:0em;" class="strut"></span><span class="mord">1</span><span class="mord">.</span><span class="mord">0</span><span class="mord"><span class="mord">5</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span style="height:0.8141079999999999em;" class="vlist"><span style="top:-3.063em;margin-right:0.05em;"><span style="height:2.7em;" class="pstrut"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1</span><span class="mord mtight">0</span><span class="mord mtight">0</span><span class="mord mtight">0</span></span></span></span></span></span></span></span></span><span style="margin-right:0.2777777777777778em;" class="mspace"></span><span class="mrel">≈</span><span style="margin-right:0.2777777777777778em;" class="mspace"></span></span><span class="base"><span style="height:0.64444em;vertical-align:0em;" class="strut"></span><span class="mord">1</span><span class="mord">.</span><span class="mord">5</span><span style="margin-right:0.2222222222222222em;" class="mspace"></span><span class="mbin">⋅</span><span style="margin-right:0.2222222222222222em;" class="mspace"></span></span><span class="base"><span style="height:0.8141079999999999em;vertical-align:0em;" class="strut"></span><span class="mord">1</span><span class="mord"><span class="mord">0</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span style="height:0.8141079999999999em;" class="vlist"><span style="top:-3.063em;margin-right:0.05em;"><span style="height:2.7em;" class="pstrut"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">2</span><span class="mord mtight">1</span></span></span></span></span></span></span></span></span></span></span></span> </p>
-<p>In 1956 J.L. Kelly published a paper regarding this phenomenon, in which he derived the formular nowadays often known as the Kelly Criterion to maximise growth. According to which in this example the gambler is best of betting <span class="katex"><span class="katex-mathml"></span><span aria-hidden="true" class="katex-html"><span class="base"><span style="height:0.80556em;vertical-align:-0.05556em;" class="strut"></span><span class="mord">1</span><span class="mord">0</span><span class="mord">%</span></span></span></span> of all their belongings each round:</p>
+<p>In 1956 J.L. Kelly published a paper regarding this phenomenon, in which he derived the formular nowadays often known as the Kelly Criterion to maximise growth. According to Kelly's formular in this example the gambler is best of betting <span class="katex"><span class="katex-mathml"></span><span aria-hidden="true" class="katex-html"><span class="base"><span style="height:0.80556em;vertical-align:-0.05556em;" class="strut"></span><span class="mord">1</span><span class="mord">0</span><span class="mord">%</span></span></span></span> of all their belongings each round:</p>
 <p><img alt="" src="images/img_2.png"></p>
 <p>(Note: Simulation was capped at 10000 to prevent overflow errors)</p>
 <p>Logartihmic scale for better visualisation:</p>
@@ -2430,7 +2320,7 @@ c100.7 8.3 195.3 44 280 108 55.3 42 101.7 93 139 153l9 14c2.7-4 5.7-8.7 9-14
 -5-4-11-12-44.7-59.3-101.3-106.3-170-141s-145.3-54.3-229-60H0V214z"></path></svg></span><span style="height:0.548em;" class="brace-right"><svg preserveAspectRatio="xMaxYMin slice" viewBox="0 0 400000 548" height="0.548em" width="400em"><path d="M399994 0l6 6v35l-6 11c-56 104-135.3 181.3-238 232-57.3
  28.7-117 45-179 50H-300V214h399897c43.3-7 81-15 113-26 100.7-33 179.7-91 237
 -174 2.7-5 6-9 10-13 .7-1 7.3-1 20-1h17z"></path></svg></span></span></span><span style="top:-3em;"><span style="height:3em;" class="pstrut"></span><span class="mord"><span class="mopen">(</span><span class="mord">1</span><span style="margin-right:0.2222222222222222em;" class="mspace"></span><span class="mbin">−</span><span style="margin-right:0.2222222222222222em;" class="mspace"></span><span style="margin-right:0.02778em;" class="mord mathnormal">r</span><span style="margin-right:0.2222222222222222em;" class="mspace"></span><span class="mbin">+</span><span style="margin-right:0.2222222222222222em;" class="mspace"></span><span class="mord">Φ</span><span style="margin-right:0.2222222222222222em;" class="mspace"></span><span class="mbin">⋅</span><span style="margin-right:0.2222222222222222em;" class="mspace"></span><span style="margin-right:0.02778em;" class="mord mathnormal">r</span><span class="mclose">)</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span style="height:0.898em;" class="vlist"><span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span style="height:1.565502em;" class="vlist"><span></span></span></span></span></span></span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span style="height:0.8042920000000002em;" class="vlist"><span style="top:-3.2029000000000005em;margin-right:0.05em;"><span style="height:2.7em;" class="pstrut"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">p</span></span></span></span></span></span></span></span></span></span></span></span><p>with:</p>
-<span class="katex-display"><span class="katex"><span class="katex-mathml"></span><span aria-hidden="true" class="katex-html"><span class="base"><span style="height:0.8888799999999999em;vertical-align:-0.19444em;" class="strut"></span><span class="mord text"><span class="mord">Kelly&nbsp;Criterion:</span></span><span style="margin-right:1em;" class="mspace"></span><span style="margin-right:0.02778em;" class="mord mathnormal">r</span><span style="margin-right:0.2777777777777778em;" class="mspace"></span><span class="mrel">=</span><span style="margin-right:0.2777777777777778em;" class="mspace"></span></span><span class="base"><span style="height:2.12966em;vertical-align:-0.7693300000000001em;" class="strut"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span style="height:1.3603299999999998em;" class="vlist"><span style="top:-2.314em;"><span style="height:3em;" class="pstrut"></span><span class="mord"><span class="mord">Φ</span><span style="margin-right:0.2222222222222222em;" class="mspace"></span><span class="mbin">−</span><span style="margin-right:0.2222222222222222em;" class="mspace"></span><span class="mord">1</span></span></span><span style="top:-3.23em;"><span style="height:3em;" class="pstrut"></span><span style="border-bottom-width:0.04em;" class="frac-line"></span></span><span style="top:-3.677em;"><span style="height:3em;" class="pstrut"></span><span class="mord"><span class="mord">Φ</span><span style="margin-right:0.2222222222222222em;" class="mspace"></span><span class="mbin">⋅</span><span style="margin-right:0.2222222222222222em;" class="mspace"></span><span class="mord mathnormal">p</span><span style="margin-right:0.2222222222222222em;" class="mspace"></span><span class="mbin">−</span><span style="margin-right:0.2222222222222222em;" class="mspace"></span><span class="mord">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span style="height:0.7693300000000001em;" class="vlist"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span><p>One has to maximise the geometric mean since in each round the gamblers money just gets multiplied by a factor depending on win or loss. For example a streak of <em>win, loss, win, loss</em> results in <span class="katex"><span class="katex-mathml"></span><span aria-hidden="true" class="katex-html"><span class="base"><span style="height:0.66786em;vertical-align:0em;" class="strut"></span><span class="mord text"><span class="mord">win</span></span><span style="margin-right:0.2222222222222222em;" class="mspace"></span><span class="mbin">⋅</span><span style="margin-right:0.2222222222222222em;" class="mspace"></span></span><span class="base"><span style="height:0.69444em;vertical-align:0em;" class="strut"></span><span class="mord text"><span class="mord">loss</span></span><span style="margin-right:0.2222222222222222em;" class="mspace"></span><span class="mbin">⋅</span><span style="margin-right:0.2222222222222222em;" class="mspace"></span></span><span class="base"><span style="height:0.66786em;vertical-align:0em;" class="strut"></span><span class="mord text"><span class="mord">win</span></span><span style="margin-right:0.2222222222222222em;" class="mspace"></span><span class="mbin">⋅</span><span style="margin-right:0.2222222222222222em;" class="mspace"></span></span><span class="base"><span style="height:0.69444em;vertical-align:0em;" class="strut"></span><span class="mord text"><span class="mord">loss</span></span></span></span></span> more money than before. with is the same outcome as after a <em>loss, loss, win, win</em> streak.</p>
+<span class="katex-display"><span class="katex"><span class="katex-mathml"></span><span aria-hidden="true" class="katex-html"><span class="base"><span style="height:0.8888799999999999em;vertical-align:-0.19444em;" class="strut"></span><span class="mord text"><span class="mord">Kelly&nbsp;Criterion:</span></span><span style="margin-right:1em;" class="mspace"></span><span style="margin-right:0.02778em;" class="mord mathnormal">r</span><span style="margin-right:0.2777777777777778em;" class="mspace"></span><span class="mrel">=</span><span style="margin-right:0.2777777777777778em;" class="mspace"></span></span><span class="base"><span style="height:2.12966em;vertical-align:-0.7693300000000001em;" class="strut"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span style="height:1.3603299999999998em;" class="vlist"><span style="top:-2.314em;"><span style="height:3em;" class="pstrut"></span><span class="mord"><span class="mord">Φ</span><span style="margin-right:0.2222222222222222em;" class="mspace"></span><span class="mbin">−</span><span style="margin-right:0.2222222222222222em;" class="mspace"></span><span class="mord">1</span></span></span><span style="top:-3.23em;"><span style="height:3em;" class="pstrut"></span><span style="border-bottom-width:0.04em;" class="frac-line"></span></span><span style="top:-3.677em;"><span style="height:3em;" class="pstrut"></span><span class="mord"><span class="mord">Φ</span><span style="margin-right:0.2222222222222222em;" class="mspace"></span><span class="mbin">⋅</span><span style="margin-right:0.2222222222222222em;" class="mspace"></span><span class="mord mathnormal">p</span><span style="margin-right:0.2222222222222222em;" class="mspace"></span><span class="mbin">−</span><span style="margin-right:0.2222222222222222em;" class="mspace"></span><span class="mord">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span style="height:0.7693300000000001em;" class="vlist"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span><p>One has to maximise the geometric mean since in each round the gamblers money just gets multiplied by a factor depending on win or loss. For example a streak of <em>win, loss, win, loss</em> results in <span class="katex"><span class="katex-mathml"></span><span aria-hidden="true" class="katex-html"><span class="base"><span style="height:0.66786em;vertical-align:0em;" class="strut"></span><span class="mord text"><span class="mord">win</span></span><span style="margin-right:0.2222222222222222em;" class="mspace"></span><span class="mbin">⋅</span><span style="margin-right:0.2222222222222222em;" class="mspace"></span></span><span class="base"><span style="height:0.69444em;vertical-align:0em;" class="strut"></span><span class="mord text"><span class="mord">loss</span></span><span style="margin-right:0.2222222222222222em;" class="mspace"></span><span class="mbin">⋅</span><span style="margin-right:0.2222222222222222em;" class="mspace"></span></span><span class="base"><span style="height:0.66786em;vertical-align:0em;" class="strut"></span><span class="mord text"><span class="mord">win</span></span><span style="margin-right:0.2222222222222222em;" class="mspace"></span><span class="mbin">⋅</span><span style="margin-right:0.2222222222222222em;" class="mspace"></span></span><span class="base"><span style="height:0.69444em;vertical-align:0em;" class="strut"></span><span class="mord text"><span class="mord">loss</span></span></span></span></span> more money than before. </p>
 <h2 class="atx" id="general-discrete-bet">General discrete bet</h2>
 <p>A general discrete bet has the following defining parameters:</p>
 <ul>
@@ -2442,7 +2332,7 @@ c100.7 8.3 195.3 44 280 108 55.3 42 101.7 93 139 153l9 14c2.7-4 5.7-8.7 9-14
 <li><p><strong>odds</strong> (payout) for each possible outcome <span class="katex"><span class="katex-mathml"></span><span aria-hidden="true" class="katex-html"><span class="base"><span style="height:0.72243em;vertical-align:-0.0391em;" class="strut"></span><span class="mord">Φ</span><span style="margin-right:0.2777777777777778em;" class="mspace"></span><span class="mrel">∈</span><span style="margin-right:0.2777777777777778em;" class="mspace"></span></span><span class="base"><span style="height:1.032177em;vertical-align:-0.34328699999999995em;" class="strut"></span><span class="mord"><span class="mord"><span class="mord mathbb">R</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span style="height:0.6643919999999999em;" class="vlist"><span style="top:-2.451892em;margin-right:0.05em;"><span style="height:2.7em;" class="pstrut"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mrel mtight">≥</span><span class="mord mtight">0</span></span></span></span><span style="top:-3.063em;margin-right:0.05em;"><span style="height:2.7em;" class="pstrut"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span style="height:0.34328699999999995em;" class="vlist"><span></span></span></span></span></span></span></span></span></span></p>
 </li>
 </ul>
-<p>By placing <span class="katex"><span class="katex-mathml"></span><span aria-hidden="true" class="katex-html"><span class="base"><span style="height:0.43056em;vertical-align:0em;" class="strut"></span><span style="margin-right:0.02778em;" class="mord mathnormal">r</span></span></span></span> currency on such a bet. The gambler has to pay <span class="katex"><span class="katex-mathml"></span><span aria-hidden="true" class="katex-html"><span class="base"><span style="height:0.43056em;vertical-align:0em;" class="strut"></span><span style="margin-right:0.02778em;" class="mord mathnormal">r</span></span></span></span> upfront. Then the random event occures and so the index <span class="katex"><span class="katex-mathml"></span><span aria-hidden="true" class="katex-html"><span class="base"><span style="height:0.78041em;vertical-align:-0.13597em;" class="strut"></span><span class="mord">0</span><span style="margin-right:0.2777777777777778em;" class="mspace"></span><span class="mrel">≤</span><span style="margin-right:0.2777777777777778em;" class="mspace"></span></span><span class="base"><span style="height:0.79549em;vertical-align:-0.13597em;" class="strut"></span><span class="mord mathnormal">i</span><span style="margin-right:0.2777777777777778em;" class="mspace"></span><span class="mrel">≤</span><span style="margin-right:0.2777777777777778em;" class="mspace"></span></span><span class="base"><span style="height:0.43056em;vertical-align:0em;" class="strut"></span><span class="mord mathnormal">n</span></span></span></span> is choosen, according to the outcome. The gambler then gets payed out <span class="katex"><span class="katex-mathml"></span><span aria-hidden="true" class="katex-html"><span class="base"><span style="height:0.83333em;vertical-align:-0.15em;" class="strut"></span><span class="mord"><span class="mord">Φ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span style="height:0.31166399999999994em;" class="vlist"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span style="height:2.7em;" class="pstrut"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span style="height:0.15em;" class="vlist"><span></span></span></span></span></span></span><span style="margin-right:0.2222222222222222em;" class="mspace"></span><span class="mbin">×</span><span style="margin-right:0.2222222222222222em;" class="mspace"></span></span><span class="base"><span style="height:0.43056em;vertical-align:0em;" class="strut"></span><span style="margin-right:0.02778em;" class="mord mathnormal">r</span></span></span></span>.</p>
+<p>By placing <span class="katex"><span class="katex-mathml"></span><span aria-hidden="true" class="katex-html"><span class="base"><span style="height:0.43056em;vertical-align:0em;" class="strut"></span><span style="margin-right:0.02778em;" class="mord mathnormal">r</span></span></span></span> currency on such a bet. The gambler has to pay <span class="katex"><span class="katex-mathml"></span><span aria-hidden="true" class="katex-html"><span class="base"><span style="height:0.43056em;vertical-align:0em;" class="strut"></span><span style="margin-right:0.02778em;" class="mord mathnormal">r</span></span></span></span> upfront. Then the random event occures and so the index <span class="katex"><span class="katex-mathml"></span><span aria-hidden="true" class="katex-html"><span class="base"><span style="height:0.78041em;vertical-align:-0.13597em;" class="strut"></span><span class="mord">0</span><span style="margin-right:0.2777777777777778em;" class="mspace"></span><span class="mrel">≤</span><span style="margin-right:0.2777777777777778em;" class="mspace"></span></span><span class="base"><span style="height:0.79549em;vertical-align:-0.13597em;" class="strut"></span><span class="mord mathnormal">i</span><span style="margin-right:0.2777777777777778em;" class="mspace"></span><span class="mrel">≤</span><span style="margin-right:0.2777777777777778em;" class="mspace"></span></span><span class="base"><span style="height:0.43056em;vertical-align:0em;" class="strut"></span><span class="mord mathnormal">n</span></span></span></span> is choosen, according to the outcome. The gambler then gets payed out <span class="katex"><span class="katex-mathml"></span><span aria-hidden="true" class="katex-html"><span class="base"><span style="height:0.83333em;vertical-align:-0.15em;" class="strut"></span><span class="mord"><span class="mord">Φ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span style="height:0.31166399999999994em;" class="vlist"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span style="height:2.7em;" class="pstrut"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span style="height:0.15em;" class="vlist"><span></span></span></span></span></span></span><span style="margin-right:0.2222222222222222em;" class="mspace"></span><span class="mbin">⋅</span><span style="margin-right:0.2222222222222222em;" class="mspace"></span></span><span class="base"><span style="height:0.43056em;vertical-align:0em;" class="strut"></span><span style="margin-right:0.02778em;" class="mord mathnormal">r</span></span></span></span>.</p>
 <p>By <span class="katex"><span class="katex-mathml"></span><span aria-hidden="true" class="katex-html"><span class="base"><span style="height:0.43056em;vertical-align:0em;" class="strut"></span><span class="mord mathnormal">n</span><span style="margin-right:0.2777777777777778em;" class="mspace"></span><span class="mrel">→</span><span style="margin-right:0.2777777777777778em;" class="mspace"></span></span><span class="base"><span style="height:0.43056em;vertical-align:0em;" class="strut"></span><span class="mord">∞</span></span></span></span> we can easily converge to a continous model.</p>
 <h2 class="atx" id="software">Software</h2>
 <p>Download <a href="https://traxar.github.io/KellyFinder/download/KellyFinder.zip">here</a>. (Windows)</p>
